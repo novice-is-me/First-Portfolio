@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;  
+}
+
+header{ 
+    background-color: #f8f8f8;
+    width: 100%;    
+    margin: 0 auto;
+    border: 1px solid orange;   
+     
+}
+
+img{
+    max-width: 100%;  
+}  
+
+span{
+    color: red;
+}
+
+/*----------------------
+       TYPOGRAPHY
+-----------------------*/
+h2{
+    font-family: 'Ubuntu', sans-serif; 
+    margin: .5em 0; 
+    margin-left: .25em; 
+    font-size: 2rem;  
+    color: #143774;    
+ 
+}
+
+.nav-title h2{
+    font-size: 2rem; 
+     
+}
+
+nav ul li a{
+    color: #707070; 
+    text-decoration: none;    
+    font-weight: 700;    
+} 
+
+/*navbar*/ 
+
+nav ul,
+.container-nav{
+    display: flex;
+    flex-direction: column; 
+}
+
+.container-nav{  
+    align-items: center; 
+    text-align: center;  
+    border: 1px solid red;
+    width: 100%;    
+}  
+
+.nav-title{
+    border: 1px solid blue;
+    padding: .5em 0;     
+    margin: .5em 0;      
+    text-align: center;   
+} 
+
+.nav-title p,
+.nav-title h2{   
+    margin: 0;  
+}
+
+nav,
+.nav-title{ 
+    width: 100%; 
+}
+
+nav ul{
+    border: 1px solid green; 
+    list-style: none;  
+    padding: 0;  
+    margin: 0;
+}
+ 
+nav ul li{ 
+    margin: 0; 
+    border: 1px solid black; 
+    padding-bottom: .5em;  
+} 
+
+nav ul li a:hover,
+nav ul li a:focus{
+    cursor: pointer;
+    border-bottom: 1px solid black; 
+}
+
+/*main*/
+.container-main{
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid green; 
+    margin: 1em auto;   
+    width: 90%;
+     
+}
+
+.container-main-flex,
+.container-section{
+    display: flex; 
+    flex-direction: column; 
+    border: 1px solid blue; 
+    text-align: center;  
+}
+
+.profile-main{
+    order: 2; 
+    border: 1px solid orange; 
+     
+}
+
+.profile-img{ 
+    border: 1px solid yellow; 
+    order: 1; 
+
+}
+
+.profile-img img{     
+    max-height: 320px;      
+    border-radius: 50%;     
+}
+
+/*media-queries*/
+
+@media (min-width:650px){    
+    .container-nav{
+        flex-direction: row; 
+        border: 1px solid black;  
+    }
+
+    .nav-title{
+        margin-top: .5em; 
+        margin-bottom: 0;  
+    }
+    nav li{
+        margin: .5em;           
+          
+    }
+    nav ul{
+        padding: 0; 
+        margin: 0; 
+        width: 100%;  
+        text-align: center; 
+    }
+
+}
