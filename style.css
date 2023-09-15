@@ -114,8 +114,11 @@ nav ul li a:focus{
 
 .profile-main{
     order: 2; 
-    border: 1px solid orange; 
-     
+    border: 1px solid orange;    
+}
+
+.profile-main h1{ 
+    border: 1px solid brown; 
 }
 
 .profile-img{ 
