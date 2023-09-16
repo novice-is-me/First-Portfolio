@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head> 
@@ -16,8 +19,8 @@
             <nav>
                 <ul>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Technologies</a></li>
-                    <li><a href="#">Experience</a></li> 
+                    <li><a href="#tech">Technologies</a></li>
+                    <li><a href="#exp">Experience</a></li> 
                 </ul>  
             </nav>
         </div> 
@@ -36,61 +39,80 @@
                 <img src="media\image.jpg" alt=""> 
             </article>
         </main>
-
-        <section class="container-section">
+ 
+        <section class="container-section" id="tech">
             <article class="article-tech">
-                <h3></h3>
+                <h3>Technologies</h3> 
                 <div id="section-image-tech">
-                    <img src="" alt="Html">
-                    <img src="" alt="CSS">
-                    <img src="" alt="JavaScript">
-                    <img src="" alt="Git">
-                    <img src="" alt="Python">
-                    <img src="" alt="Java">
+                    <img src="media\html.png" alt="Html">
+                    <img src="media\css.png" alt="CSS">
+                    <img src="media\js.png" alt="JavaScript">
+                    <img src="media\git.png" alt="Git">
+                    <img src="media\python.png" alt="Python">
+                    <img src="media\java.png" alt="Java"> 
                 </div>
-            </article>
-
-            <article class="article-proj">
+            </article> 
+ 
+            <article class="article-proj" id="exp">
                 <div class="article-project-content">
-                    <article class="project-content">
-                        <h2></h2>
-                        <p></p>
-                    </article>
                     <article class="project-image">
-                        <img src="" alt="">
-                    </article>
-                </div>
-
-                <div class="article-project-content">
+                        <img src="media\lotto-preview.jpg" alt="">
+                    </article>  
                     <article class="project-content">
-                        <h2></h2>
-                        <p></p>
-                    </article>
-                    <article class="project-image">
-                        <img src="" alt="">
+                        <h2>Lotto Number</h2>
+                        <p>This generates 6 random number for Lotto input.</p>
+                        <div class="container-tech">
+                            <img src="media\html.png" alt="">
+                            <img src="media\css.png" alt="">
+                            <img src="media\js.png" alt="">
+                        </div>
                     </article>
                 </div>
 
                 <div class="article-project-content">
-                    <article class="project-content">
-                        <h2></h2>
-                        <p></p>
-                    </article>
                     <article class="project-image">
-                        <img src="" alt="">
+                        <img src="media\travel-landpage.jpg" alt="">
+                    </article> 
+                    <article class="project-content">
+                        <h2>Landpage Travel Website</h2>
+                        <p>It shows various tourist spots in Luzon, Visayas, Mindanao</p>
+                        <div class="container-tech">
+                            <img src="media\html.png" alt="">
+                            <img src="media\css.png" alt="">
+                        </div>
+                    </article>
+                </div>
+                <div class="article-project-content">
+                    <article class="project-image">
+                        <img src="media\article.jpg" alt="">
+                    </article> 
+                    <article class="project-content">
+                        <h2>Article Blog</h2>
+                        <p>Simple personal blog article that is responsive for different
+                            kind of screen size. The template can be found in internet.
+                        </p>
+                        <div class="container-tech">
+                            <img src="media\html.png" alt="">
+                            <img src="media\css.png" alt=""> 
+                        </div>
                     </article>
                 </div>
 
                 <div class="article-project-content">
-                    <article class="project-content">
-                        <h2></h2>
-                        <p></p>
-                    </article>
                     <article class="project-image">
-                        <img src="" alt="">
+                        <img src="media\message.jpg" alt="">
+                    </article> 
+                    <article class="project-content">
+                        <h2>Automated Message in Python</h2>
+                        <p>It automates message in messenger through the uses of pyautogui.
+                            It can send message in a specific time as long as the user is log-in
+                            on its device.
+                        </p>
+                        <div class="container-tech">
+                            <img src="media\python.png" alt="">
+                        </div>
                     </article>
                 </div>
-
             </article>
         </section>
     </div>
@@ -98,9 +120,26 @@
     <footer class="footer-section">
         <div class="footer-content">
             <article class="footer-contact">
-                
+                <div class="contact-image">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </article>
-            <article class="footer-info"></article>
+            <article class="footer-info">
+                <form action="">
+                    <div class="input-form">
+                        <input type="text">
+                        <label for="">Name</label> 
+                    </div>
+                    <div class="input-form"> 
+                        <input type="email"> 
+                        <label for="">Email</label> 
+                    </div>  
+                    <button>Send</button>
+                </form>
+            </article>
         </div>
     </footer>
     
