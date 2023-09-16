@@ -14,6 +14,10 @@ header{
      
 }
 
+footer{
+    background-color: #ffffffea;  
+}
+
 img{
     max-width: 100%;  
 }  
@@ -226,7 +230,26 @@ nav ul li a:focus{
     border: 1px solid skyblue; 
     color: whitesmoke; 
     cursor: pointer; 
-}  
+}
+
+.footer-content{
+    border: 1px solid green; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.footer-contact{
+    border: 1px solid black;
+}
+
+.footer-contact h5{
+    color: black; 
+}
+
+.footer-info{
+    border: 1px solid red; 
+}
+
 
 /*media-queries*/
 @media (max-width: 850px ) and (min-width: 650px){
