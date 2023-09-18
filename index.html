@@ -18,7 +18,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#tech">Technologies</a></li>
                     <li><a href="#exp">Experience</a></li> 
                 </ul>  
@@ -117,7 +117,7 @@
         </section>
     </div>
 
-    <footer class="footer-section">
+    <footer class="footer-section" id="#about"> 
         <div class="footer-content">
             <article class="footer-contact">
                 <h5>Contact</h5> 
@@ -128,17 +128,19 @@
                     <img src="media\linkedin.png" alt="linkedin">
                 </div>
             </article>
-            <article class="footer-info">
-                <form action="">
-                    <div class="input-form">
-                        <input type="text">
-                        <label for="">Name</label> 
+            <article class="footer-info" > 
+                <form action="" class="form">  
+                    <div class="form-wrap">
+                        <div class="input-form">
+                            <label for="">Name</label> 
+                            <input type="text">
+                        </div>
+                        <div class="input-form"> 
+                            <label for="">Email</label> 
+                            <input type="email">  
+                        </div>
+                        <button>Send</button> 
                     </div>
-                    <div class="input-form"> 
-                        <input type="email"> 
-                        <label for="">Email</label> 
-                    </div>  
-                    <button>Send</button>
                 </form>
             </article>
         </div>
