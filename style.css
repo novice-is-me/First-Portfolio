@@ -60,13 +60,10 @@ nav ul,
 
 .container-nav{  
     align-items: center; 
-    text-align: center;  
-    border: 1px solid red;
-         
+    text-align: center;            
 }  
 
 .nav-title{
-    border: 1px solid blue;
     padding: .5em 0;     
     margin: .5em 0;      
     text-align: center;   
@@ -82,7 +79,6 @@ nav ul,
 }
 
 nav ul{
-    border: 1px solid green; 
     list-style: none;  
     padding: 0;  
     margin: 0;
@@ -90,7 +86,6 @@ nav ul{
  
 nav ul li{ 
     margin: 0; 
-    border: 1px solid black; 
     padding-bottom: .5em;  
     
 } 
@@ -105,7 +100,7 @@ nav ul li a:focus{
 .container-main{
     display: flex;
     flex-direction: column; 
-    border: 1px solid green; 
+
     margin: 1em auto;   
     width: 90%;
      
@@ -115,18 +110,18 @@ nav ul li a:focus{
 .container-section{
     display: flex; 
     flex-direction: column; 
-    border: 1px solid blue; 
-    text-align: center;  
+    text-align: center;   
+}
+
+.container-main-flex{
+    border-bottom: 1px solid white;
 }
 
 .profile-main{
     order: 2; 
-    border: 1px solid orange;  
-    
 }
 
 .profile-main h1{ 
-    border: 1px solid brown; 
     font-family: /*'Lato',*/ sans-serif; 
     font-size: 2rem;   
     margin: .5em 0;    
@@ -134,7 +129,6 @@ nav ul li a:focus{
 }
 
 .profile-main p{ 
-    border: 1px solid black; 
     font-size: 1.5rem; 
     margin: 0 2em;    
     margin-bottom: .5em; 
@@ -146,13 +140,11 @@ nav ul li a:focus{
     width: 100%;       
     max-width: 150px; 
     border-radius: 15px; 
-    margin-bottom: .5em;             
-      
+    margin-bottom: .5em;              
 }
 
 .profile-img{ 
     padding: .5em; 
-    border: 1px solid yellow; 
     order: 1; 
 }
 
@@ -162,13 +154,8 @@ nav ul li a:focus{
 }
 
 /*section*/
-.container-section{
-    border: 1px solid red;     
-
-}
 
 .article-tech h3{
-    border: 1px solid greenyellow; 
     font-size: 1.8rem; 
     text-transform: uppercase;   
     color: aqua;
@@ -178,8 +165,7 @@ nav ul li a:focus{
     margin-bottom: .75em;  
 }
 
-#section-image-tech img{  
-    border: 1px solid black;   
+#section-image-tech img{   
     width: 30%; 
     max-width: 80px; 
     padding: 1em; 
@@ -188,19 +174,16 @@ nav ul li a:focus{
 
 /*project*/
 
-.article-proj{ 
-    border: 1px solid purple;  
+.article-proj{  
     display: flex; 
     flex-direction: column;  
 }
 
 .project-image{
-    padding: 1em;  
-    border: 1px solid black;  
+    padding: 1em; 
 }
 
 .project-content{ 
-    border: 1px solid purple;  
     margin-bottom: .5em;
 }
 
@@ -213,14 +196,12 @@ nav ul li a:focus{
 .project-content h2{ 
     font-weight: 700;  
     font-size: 1.5rem;  
-    border: 1px solid black; 
     margin-top: .25em;
     margin-bottom: .25em;   
     color: aqua;    
 }
 
 .project-content p{
-    border: 1px solid firebrick; 
     margin-bottom: .25em; 
     margin-top: 0;    
 }
@@ -228,10 +209,13 @@ nav ul li a:focus{
 .profile-main button:hover,
 .profile-main button:focus{
     background-color:transparent ; /* Green */
-    border: 1px solid skyblue; 
     color: whitesmoke; 
     cursor: pointer; 
 }
+
+.footer-section{
+    text-align: center; 
+} 
  
 .footer-content h5,
 .footer-info label{
@@ -244,26 +228,60 @@ nav ul li a:focus{
     padding: .5em .5em;  
 }
 
+.footer-contact{  
+    padding-bottom: .5em; 
+    margin-bottom: 1em; 
+}
+
+.contact-image img{
+    margin-left: 1.2em;   
+}
+
+.footer-info{
+    padding-top: .5em;
+    margin-top: 1em; 
+    display: flex; 
+    justify-content: center;  
+    text-align: center; 
+    width: 100%; 
+}
+
+.form-wrap label{
+    font-size: 1.5rem;  
+    padding-right: 1em; 
+}
+
+.form-wrap input{ 
+    margin-bottom: 2em;   
+    width: 200px; 
+    height: 30px;  
+    border-radius: 5px;  
+}
+
+.form-wrap button{
+    width: 50%; 
+    height: 30px;    
+    margin-bottom: 1em; 
+    border-radius: 5px; 
+} 
+
 /*media-queries*/
 @media (max-width: 850px ) and (min-width: 650px){
     .profile-main button{ 
        margin-top: 1em !important;     
     } 
     .container-section{
-        width: 100% !important;  
-        border: 1px solid yellow;     
+        width: 100% !important;      
     } 
 } 
-  
+
 @media (min-width:650px){  
     .container-nav{
-        flex-direction: row;   
-        border: 1px solid red;   
+        flex-direction: row;    
         justify-content: space-around;  
     }
 
     .container-main{ 
-        border: 1px solid white;  
         display: flex;
         align-items: center; 
     }
@@ -279,15 +297,13 @@ nav ul li a:focus{
     }
 
     nav ul li{ 
-       margin: 0 1em;    
-        border: 1px solid yellow; 
+       margin: 0 1em;   
         padding: 0; 
         
     }
     nav ul{   
         flex-direction: row; 
-        text-align: center; 
-            
+        text-align: center;   
     }
 
     .container-main-flex{
@@ -349,6 +365,21 @@ nav ul li a:focus{
     .form,
     .form-wrap{
         flex-direction: row; 
+    }
+
+    .footer-contact{
+        width: 60%;  
+        margin-bottom: 0; 
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;   
+    }
+
+    .footer-info{
+        margin: 0; 
     }
 }
 
